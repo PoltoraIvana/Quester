@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F27" minimumToolsVersion="Xcode 7.0">
+    <entity name="Day" syncable="YES">
+        <attribute name="dayDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dayName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Meal" syncable="YES"/>
+    </entity>
+    <entity name="Meal" syncable="YES">
+        <attribute name="numberOfCaloriesInMeal" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Day" positionX="-317" positionY="27" width="128" height="28"/>
+        <element name="Meal" positionX="-54" positionY="-9" width="128" height="60"/>
+    </elements>
+</model>
